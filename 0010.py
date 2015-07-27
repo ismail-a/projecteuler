@@ -3,33 +3,17 @@
 
 import math
 
-def isPrime(num):
-    if num is 1:
-        return False
-    elif num < 4:
-        return True
-    elif num % 2 is 0:
-        return False
-    elif num < 9:
-        return True
-    elif num % 3 is 0:
-        return False
-    else:
-        r = int(math.sqrt(num))
-        f = 5
-        while f <= r:
-            if num % f is 0:
-                return False
-            if num % (f + 2) is 0:
-                return False
-            f += 6
-        return True
+limit = 2000000
+sieveBound = (limit - 1) / 2
+sieve = [False] * sieveBound
+crossLimit = int((math.sqrt(limit) - 1) / 2)
+for i in range(1, crossLimit):
+    if not sieve[i]:
+        for j in range(2 * i * (i + 1), sieveBound, 2 * i + 1):
+            sieve[j] = True
+sum = 2
+for i in range(1, sieveBound):
+    if not sieve[i]:
+        sum += 2 * i + 1
 
-n = 2000000
-sum = 5
-
-for i in range(5,n,2):
-    if isPrime(i):
-        sum += i
-
-print('The sum of all the primes below ' + str(n) + ': ' + str(sum))
+print('The sum of all the primes below ' + str(limit) + ': ' + str(sum))
