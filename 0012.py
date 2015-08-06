@@ -6,7 +6,7 @@ dn = 2
 cnt = 0
 n1 = dn1 = i = exponent = 0
 p = 1000
-primeArray = range(1,p)
+primeArray = range(1, p)
 
 while cnt <= 500:
     n += 1

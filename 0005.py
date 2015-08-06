@@ -1,5 +1,4 @@
 #!/usr/bin/env python3
-
 # __author__ = 'ismail'
 
 import math
@@ -14,4 +13,5 @@ for i in range(1, len(p)):
         a[i] = int(math.log(k, 2) / math.log(p[i], 2))
     N *= p[i] ** a[i]
 
-print('The smallest positive number that is evenly divisible by all of the numbers from 1 to 20: ' + str(N))
+print('The smallest positive number that is evenly divisible ' +
+      'by all of the numbers from 1 to ' + k + ': ' + str(N))

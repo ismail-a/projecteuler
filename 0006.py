@@ -3,7 +3,10 @@
 
 """
 Algorithm
-(x1 + x2 + ... xn)^2 = (x1^2 + x2^2 + ... + xn^2) + 2(x1x2 + x1x3 + ... xn-1 * xn) <- all the combination among x1 to xn
+(x1 + x2 + ... xn)^2 = (x1^2 + x2^2 + ... + xn^2) +
+2(x1x2 + x1x3 + ... xn-1 * xn)
+all the combination among x1 to xn
+
 So,
 (1 + 2 + ... + 100)^2 - (1^2 + 2^2 + ... 100^2) = 2(1*2 + 1*3 + ... + 99*100)
 """

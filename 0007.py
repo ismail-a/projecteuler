@@ -3,6 +3,7 @@
 
 import math
 
+
 def isPrime(num):
     if num is 1:
         return False

@@ -10,5 +10,6 @@ while prime <= x:
         x //= prime
     prime += 1
 
-#print(prime_list)
-print('The largest prime factor of the number 600851475143: ' + str(prime_list[-1]))
+# print(prime_list)
+print('The largest prime factor of the number ' +
+      x + ': ' + str(prime_list[-1]))
