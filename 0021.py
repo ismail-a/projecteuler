@@ -10,7 +10,7 @@ def d(n):
     for j in range(2, int(t) + 1):
         if n % j == 0:
             dn += j + n // j
-    if t is int(t):
+    if t == int(t):
         dn -= t
     return dn
 
